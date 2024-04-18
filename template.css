@@ -1,0 +1,12 @@
+body{
+    background-color:#F6A732;
+}
+* {
+    margin: 0;
+    padding: 0;
+  }
+ 
+  img {
+    display: block;
+    margin-left: auto;
+  }
