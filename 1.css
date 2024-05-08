@@ -101,14 +101,14 @@ body{
   justify-content: left;
   align-items: left; 
 }
-#insertedText p {
+#insertedText {
   color: white;
-  font-size: 40px;
-  font-family: "mudstone-sans", sans-serif;
-font-weight: 900;
-font-style: normal; 
+  font-size: 60px;
+  font-family: "effra-cc-variable", sans-serif;
+  font-variation-settings: "wght" 700;
 transform: translate(-50%, -50%);
 top: 50%;
 left: 50%;
 position: absolute;
+text-align: center;
 }

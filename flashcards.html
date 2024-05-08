@@ -17,41 +17,54 @@
     
         <div class="row">
             <div class="box"><a href="1.html">Egyptian Hieroglyphics</a>
-                <div class="insertedText"></div>
+                <div class="Text">>&#x13013; &#x13050; &#x10992; &#x13254; &#x313f; &#x13191; &#x13191; &#x1313f; &#x13254;. &#x13050; &#x130CB; &#x132aa; &#x1313f; &#x1308b; &#x132f4; &#x13191; &#x132f4;. &#x13050; &#x13001; &#x1337f; &#x13171; &#x1308b; &#x1308b; &#x1309d; &#x13191; &#x133cf; &#x132f4; &#x130a7; &#x131cc; &#x132aa; &#x1309d; &#x132f4; &#x1309d; &#x133cf; &#x133cf; &#x131ed; &#x13191; &#x133a1;!</div>
+                <button onclick="downloadPDF('box1')">Download PDF</button>
             </div>
             <div class="box2"><a href="2.html">Phoenician</a>
-                <div class="insertedText"></div>
+                <div class="Text">𐤌𐤍𐤇 𐤔𐤌 𐤄𐤀𐤍𐤍𐤀𐤄 𐤀𐤍 𐤔𐤋𐤔 𐤔𐤕 𐤐𐤀𐤓𐤎𐤍𐤎 𐤀𐤍𐤊 𐤋𐤁 𐤊𐤓𐤓𐤍𐤕𐤎 𐤕𐤀𐤐𐤎𐤕𐤕𐤀𐤍𐤂</div>
+                <button onclick="downloadPDF('box2')">Download PDF</button>
             </div>
             <div class="box3"><a href="3.html">Greek</a>
-                <div class="insertedText"></div>
-            </div>
+                <div class="Text">Γεια σας! όνομά μου είναι Χάνα. Είμαι φοιτήτρια στο Πάρσονς. Λατρεύω το Τυπογραφικό Σχέδιο Κάρεντς!</div>
+                <button onclick="downloadPDF('box3')">Download PDF</button>
+             </div>
             <div class="box4"><a href="4.html">Etrucean</a>
-                <div class="insertedText"></div>
+                <div class="Text">nunθe- mi taliθa. Mi ara ziχ. Mi ścu- tenve!</div>
+                <button onclick="downloadPDF('box4')">Download PDF</button>
             </div>
             <div class="box5"><a href="5.html">Armenian</a>
-                <div class="insertedText"></div>
+                <div class="Text">Ողջույն! Իմ անունը Հաննա է։ Ես ուսանող եմ Պարսոնս-ում։ Ես սիրում եմ Կեռրանց տպագրությունը</div>
+                <button onclick="downloadPDF('box5')">Download PDF</button>
             </div>
             <div class="box6"><a href="6.html">Georgian</a>
-                <div class="insertedText"></div>
+                <div class="Text">გამარჯობა! ჩემი სახელი ჰანა არის. მე პარსონსში პირველი კურსის მოსწავლე ვარ. მიყვარხარ კარენტსის გადაფარებას!</div>
+                <button onclick="downloadPDF('box6')">Download PDF</button>
             </div>
             <div class="box7"><a href="7.html">Cyrillic</a>
-                <div class="insertedText"></div>
-            </div>
+                <div class="Text">Привет! Меня зовут Ханна. Я студент(ка) на первом курсе в Парсонс. Я обожаю верстку в Кърънтс!</div>
+                <button onclick="downloadPDF('box7')">Download PDF</button>
+             </div>
             <div class="box8"><a href="8.html">Latin</a>
-                <div class="insertedText"></div>
-            </div>
+                <div class="Text">Hello! My name is Hannah. I am a junior at Parsons. I love Currents Typesetting!</div>
+                <button onclick="downloadPDF('box8')">Download PDF</button>
+             </div>
         </div>
-
-    <script>
-        window.onload = function() {
-            var insertedText = localStorage.getItem("inputText");
-            if (insertedText) {
-                var insertedTextDivs = document.querySelectorAll(".insertedText");
-                insertedTextDivs.forEach(function(div) {
-                    div.innerHTML = "<p>" + insertedText + "</p>";
-                });
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+        <script>
+            function downloadPDF() {
+    console.log("Inside downloadPDF function");
+    var element = document.querySelector("#your-selector");
+    console.log("Selected element:", element);
+            
+            function downloadPDF(boxId) {
+                var box = document.getElementById(boxId);
+                var text = box.querySelector('.Text').textContent;
+                var pdf = new jsPDF();
+                pdf.text(text, 10, 10);
+                pdf.save(boxId + ".pdf");
             }
-        };
-    </script>
+        }
+        </script>
 </body>
 </html>
+

@@ -50,8 +50,9 @@ body{
     background-color: #F6A732;
     opacity: 1;
     margin: 5px;
+    display: flex;
+    flex-direction: column;
     box-sizing: border-box;
-    display: absolute;
     padding: 10pt;
     font-family: "mudstone-sans", sans-serif;
     font-weight: 900;
@@ -65,7 +66,8 @@ body{
     opacity: 1;
     margin: 5px;
     box-sizing: border-box;
-    display: absolute;
+    display: flex;
+    flex-direction: column;
     padding: 10pt;
     font-family: "mudstone-sans", sans-serif;
     font-weight: 900;
@@ -79,7 +81,8 @@ body{
     opacity: 1;
     margin: 5px;
     box-sizing: border-box;
-    display: absolute;
+    display: flex;
+    flex-direction: column;
     padding: 10pt;
     font-family: "mudstone-sans", sans-serif;
     font-weight: 900;
@@ -93,7 +96,8 @@ body{
     opacity: 1;
     margin: 5px;
     box-sizing: border-box;
-    display: absolute;
+    display: flex;
+    flex-direction: column;
     padding: 10pt;
     font-family: "mudstone-sans", sans-serif;
     font-weight: 900;
@@ -108,7 +112,8 @@ body{
     opacity: 1;
     margin: 5px;
     box-sizing: border-box;
-    display: absolute;
+    display: flex;
+    flex-direction: column;
     padding: 10pt;
     font-family: "mudstone-sans", sans-serif;
     font-weight: 900;
@@ -123,7 +128,8 @@ body{
     opacity: 1;
     margin: 5px;
     box-sizing: border-box;
-    display: absolute;
+    display: flex;
+    flex-direction: column;
     padding: 10pt;
     font-family: "mudstone-sans", sans-serif;
     font-weight: 900;
@@ -138,7 +144,8 @@ body{
     opacity: 1;
     margin: 5px;
     box-sizing: border-box;
-    display: absolute;
+    display: flex;
+    flex-direction: column;
     padding: 10pt;
     font-family: "mudstone-sans", sans-serif;
     font-weight: 900;
@@ -154,18 +161,22 @@ body{
     margin: 5px;
     box-sizing: border-box;
     padding: 10pt;
-    display: absolute;
+    display: flex;
+    flex-direction: column;
     font-family: "mudstone-sans", sans-serif;
     font-weight: 900;
     font-style: normal; 
     font-size: 30pt;
   }
-  .insertedText {
+  .Text {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     height: 100%; /* Ensure the inserted text div takes up the full height of the box */
+    font-size: 20pt;
+    font-family: "effra-cc-variable", sans-serif;
+font-variation-settings: "wght" 700;
 }
 
 
@@ -182,3 +193,21 @@ a:visited {
 a:hover {
  color: white;
 }
+
+button {
+    display: flex;
+    border: none;
+    border-radius: 20px;
+    background-color: white;
+    color: black;
+    font-family: "mudstone-sans", sans-serif;
+  font-weight: 900;
+  font-style: normal; 
+  font-size: 15pt; 
+  font-family: "mudstone-sans", sans-serif;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  }
+
+ 

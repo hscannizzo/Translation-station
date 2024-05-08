@@ -40,7 +40,7 @@
         </div>
     </div>
 
-    <div id="insertedText"></div>
+    <div id="insertedText">გამარჯობა! ჩემი სახელი ჰანა არის. მე პარსონსში პირველი კურსის მოსწავლე ვარ. მიყვარხარ კარენტსის გადაფარებას!    </div>
 
     <div class="container">
         <a href="familytree.html"><img class="familytree" src="Photos/familytree.png" height="100vh" loading="lazy" alt="familytree"></a>
@@ -49,12 +49,11 @@
     </div>
 
     <script>
-        window.onload = function() {
-            var insertedText = localStorage.getItem("inputText");
-            if (insertedText) {
-                document.getElementById("insertedText").innerHTML = "<p>" + insertedText + "</p>";
-            }
-        };
+        function replaceText() {
+            var insertedText = 'გამარჯობა! ჩემი სახელი ჰანა არის. მე პარსონსში პირველი კურსის მოსწავლე ვარ. მიყვარხარ კარენტსის გადაფარებას!';
+            var insertedTextDiv = document.getElementById("insertedText");
+            insertedTextDiv.innerHTML = insertedText;
+        }
     </script>
 </body>
 </html>
