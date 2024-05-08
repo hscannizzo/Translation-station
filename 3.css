@@ -1,5 +1,5 @@
 body{
-    background-color:#F6A732;
+    background-color:#C8B65E;
     margin: 0;
     padding: 0;
     display: flex;
@@ -55,10 +55,10 @@ body{
 }
 
 .box {
-  width: 100px;
-  height: 100px;
-  background-color: #ddd;
-  border: 1px solid #aaa;
+  width: 53px;
+  height: 30px;
+  background-color: #FFFFFF;
+  opacity: .6;
   margin: 5px;
   box-sizing: border-box;
   display: flex;
@@ -66,6 +66,49 @@ body{
   align-items: center;
 }
 
-.box underneath {
-  margin-top: 20vh; 
+.boxnow {
+  width: 53px;
+  height: 30px;
+  background-color: #FFFFFF;
+  opacity: 1;
+  margin: 5px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+
+.boxunderneath {
+  width: 53px;
+  height: 30px;
+  background-color: #FFFFFF;
+  opacity: .6;
+  margin: 5px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+}
+
+.boxother {
+  width: 53px;
+  height: 30px;
+  background-color: #FFFFFF;
+  opacity: 0;
+  margin: 5px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: left;
+  align-items: left; 
+}
+#insertedText p {
+  color: white;
+  font-size: 40px;
+  font-family: "mudstone-sans", sans-serif;
+font-weight: 900;
+font-style: normal; 
+transform: translate(-50%, -50%);
+top: 50%;
+left: 50%;
+position: absolute;
 }

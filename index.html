@@ -10,18 +10,16 @@
     <link rel="stylesheet" href="index.css" type="text/css"/>
     <link rel="icon" href="Photos/logo1.png">
 </head>
- <body>
+<body>
     <img class="logomark" src="Photos/logo1.png" height="250vh" loading="lazy" alt="logomark">
    
     <div class="container">
         <label for="freeform"></label>
         <br>
         <textarea id="freeform" name="freeform" rows="8" cols="40" maxlength="250" placeholder="Type Here..." oninput="updateCountdown()"></textarea>
-       <div id="countdown">0/250</div>
+        <div id="countdown">0/250</div>
         <button onclick="goClicked()">GO!</button>
-        
     </div>
-
 
     <script>
         function updateCountdown() {
@@ -30,12 +28,14 @@
             var currentChars = textarea.value.length;
             countdown.textContent = currentChars + "/250";
         }
-        function goClicked() {
-    // Add your functionality here
-    alert("Button clicked!");
-}
-    </script>
 
+        function goClicked() {
+            var text = document.getElementById("freeform").value;
+            localStorage.setItem("inputText", text);
+            window.open("1.html", "_self");
+        }
+    </script>
 </body>
- </html>
+</html>
+
  

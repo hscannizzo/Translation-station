@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <!--cannizthewiz-->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://use.typekit.net/kns7fhe.css">
+    <title>Rosetta.NET</title>
+    <meta name="description" content="">
+    <link rel="stylesheet" href="flashcards.css" type="text/css"/>
+    <link rel="icon" href="Photos/logo1.png">
+</head>
+<body>
+    <h1>Family Tree</h1>
+    <img class="logomark" src="Photos/logo2.png" height="250vh" loading="lazy" alt="logomark">
+
+    
+        <div class="row">
+            <div class="box"><a href="1.html">Egyptian Hieroglyphics</a>
+                <div class="insertedText"></div>
+            </div>
+            <div class="box2"><a href="2.html">Phoenician</a>
+                <div class="insertedText"></div>
+            </div>
+            <div class="box3"><a href="3.html">Greek</a>
+                <div class="insertedText"></div>
+            </div>
+            <div class="box4"><a href="4.html">Etrucean</a>
+                <div class="insertedText"></div>
+            </div>
+            <div class="box5"><a href="5.html">Armenian</a>
+                <div class="insertedText"></div>
+            </div>
+            <div class="box6"><a href="6.html">Georgian</a>
+                <div class="insertedText"></div>
+            </div>
+            <div class="box7"><a href="7.html">Cyrillic</a>
+                <div class="insertedText"></div>
+            </div>
+            <div class="box8"><a href="8.html">Latin</a>
+                <div class="insertedText"></div>
+            </div>
+        </div>
+
+    <script>
+        window.onload = function() {
+            var insertedText = localStorage.getItem("inputText");
+            if (insertedText) {
+                var insertedTextDivs = document.querySelectorAll(".insertedText");
+                insertedTextDivs.forEach(function(div) {
+                    div.innerHTML = "<p>" + insertedText + "</p>";
+                });
+            }
+        };
+    </script>
+</body>
+</html>

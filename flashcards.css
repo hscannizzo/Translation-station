@@ -1,0 +1,184 @@
+body{
+    background-color:#1E1E1E;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+* {
+    margin: 0;
+    padding: 0;
+  }
+ 
+  .logomark {
+    display: block;
+    margin-left: auto;
+  }
+  h1 {
+    position: absolute;
+    padding: 10pt;
+    font-family: "mudstone-sans", sans-serif;
+    font-weight: 900;
+    font-style: normal; 
+    font-size: 40pt;
+    color: white;
+  }
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: 5%;
+}
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .box {
+    width: 500px;
+    height: 400px;
+    background-color: #F6A732;
+    opacity: 1;
+    margin: 5px;
+    box-sizing: border-box;
+    display: absolute;
+    padding: 10pt;
+    font-family: "mudstone-sans", sans-serif;
+    font-weight: 900;
+    font-style: normal; 
+    font-size: 30pt;
+  }
+  .box2 {
+    width: 500px;
+    height: 400px;
+    background-color: #EF5840;
+    opacity: 1;
+    margin: 5px;
+    box-sizing: border-box;
+    display: absolute;
+    padding: 10pt;
+    font-family: "mudstone-sans", sans-serif;
+    font-weight: 900;
+    font-style: normal; 
+    font-size: 30pt;
+  }
+  .box3 {
+    width: 500px;
+    height: 400px;
+    background-color: #C8B65E;
+    opacity: 1;
+    margin: 5px;
+    box-sizing: border-box;
+    display: absolute;
+    padding: 10pt;
+    font-family: "mudstone-sans", sans-serif;
+    font-weight: 900;
+    font-style: normal; 
+    font-size: 30pt;
+  }
+  .box4 {
+    width: 500px;
+    height: 400px;
+    background-color: #F7B2CC;
+    opacity: 1;
+    margin: 5px;
+    box-sizing: border-box;
+    display: absolute;
+    padding: 10pt;
+    font-family: "mudstone-sans", sans-serif;
+    font-weight: 900;
+    font-style: normal; 
+    font-size: 30pt;
+  }
+  
+  .box5 {
+    width: 500px;
+    height: 400px;
+    background-color: #F7B2CC;
+    opacity: 1;
+    margin: 5px;
+    box-sizing: border-box;
+    display: absolute;
+    padding: 10pt;
+    font-family: "mudstone-sans", sans-serif;
+    font-weight: 900;
+    font-style: normal; 
+    font-size: 30pt;
+  }
+  
+  .box6 {
+    width: 500px;
+    height: 400px;
+    background-color: #F7B2CC;
+    opacity: 1;
+    margin: 5px;
+    box-sizing: border-box;
+    display: absolute;
+    padding: 10pt;
+    font-family: "mudstone-sans", sans-serif;
+    font-weight: 900;
+    font-style: normal; 
+    font-size: 30pt;
+  }
+
+  .box7 {
+    width: 500px;
+    height: 400px;
+    background-color: #F7B2CC;
+    opacity: 1;
+    margin: 5px;
+    box-sizing: border-box;
+    display: absolute;
+    padding: 10pt;
+    font-family: "mudstone-sans", sans-serif;
+    font-weight: 900;
+    font-style: normal; 
+    font-size: 30pt;
+  }
+
+  .box8 {
+    width: 500px;
+    height: 400px;
+    background-color: #F4E9D7;
+    opacity: 1;
+    margin: 5px;
+    box-sizing: border-box;
+    padding: 10pt;
+    display: absolute;
+    font-family: "mudstone-sans", sans-serif;
+    font-weight: 900;
+    font-style: normal; 
+    font-size: 30pt;
+  }
+  .insertedText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%; /* Ensure the inserted text div takes up the full height of the box */
+}
+
+
+   /*LINK STYLING */
+ a:link {
+  color: black;
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+ color: white;
+}

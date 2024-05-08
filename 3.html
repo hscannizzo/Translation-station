@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <!--cannizthewiz-->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://use.typekit.net/kns7fhe.css">
+    <title>Rosetta.NET</title>
+    <meta name="description" content="">
+    <link rel="stylesheet" href="3.css" type="text/css"/>
+    <link rel="icon" href="Photos/logo1.png">
+</head>
+<body>
+    <h1>Greek</h1>
+    <img class="logomark" src="Photos/logo1.png" height="250vh" loading="lazy" alt="logomark">
+
+    <div class="tree">
+        <!-- First column with three boxes -->
+        <div class="column">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="boxnow"></div>
+        </div>
+        <!-- Additional box underneath -->
+        
+        <!-- Second column with four boxes -->
+        <div class="column">
+            <div class="row">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+            <div class="row">
+            <div class="boxunderneath"></div>
+            <div class="boxother"></div>
+            <div class="boxother"></div>
+            <div class="boxother"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="insertedText"></div>
+
+    <div class="container">
+        <a href="familytree.html"><img class="familytree" src="Photos/familytree.png" height="100vh" loading="lazy" alt="familytree"></a>
+        <a href="4.html"><img class="next" src="Photos/arrow.png" height="100vh" loading="lazy" alt="arrow"></a>
+        <a href="flashcards.html"><img class="flashcards" src="Photos/flashcards.png" height="100vh" loading="lazy" alt="flashcards"></a>
+    </div>
+
+    <script>
+        window.onload = function() {
+            var insertedText = localStorage.getItem("inputText");
+            if (insertedText) {
+                document.getElementById("insertedText").innerHTML = "<p>" + insertedText + "</p>";
+            }
+        };
+    </script>
+</body>
+</html>
